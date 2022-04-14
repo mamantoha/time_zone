@@ -1,0 +1,9 @@
+name: time_zone
+version: 0.1.0
+
+authors:
+  - Anton Maminov <anton.maminov@gmail.com>
+
+crystal: ">= 1.0.0"
+
+license: MIT
