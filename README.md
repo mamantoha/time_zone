@@ -1,5 +1,7 @@
 # TimeZone
 
+[![Crystal CI](https://github.com/mamantoha/time_zone/actions/workflows/crystal.yml/badge.svg)](https://github.com/mamantoha/time_zone/actions/workflows/crystal.yml)
+
 The `TimeZone` class serves as a helper to work with time zones in Crystal.
 
 It allows to do the following:
