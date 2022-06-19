@@ -204,6 +204,17 @@ class TimeZone
     @utc_offset = zone.offset
   end
 
+  # Creates a new `Time` instance representing the current time from the
+  # system clock observed in time zone.
+  def local : Time
+    Time.local(@location)
+  end
+
+  # Creates a new `Time` instance representing the given local date-time in time zone.
+  def local(year : Int32, month : Int32, day : Int32, hour : Int32 = 0, minute : Int32 = 0, second : Int32 = 0, *, nanosecond : Int32 = 0) : Time
+    Time.local(year, month, day, hour, minute, second, nanosecond: nanosecond, location: @location)
+  end
+
   # Compares this `TimeZone` with *other*.
   #
   # The two are compared first on

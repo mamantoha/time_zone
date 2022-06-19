@@ -31,7 +31,7 @@ zone = TimeZone.new("Berlin")
 puts zone
 # (GMT+02:00) Berlin
 
-Time.local(zone.location) # returns the current time in time zone "Europe/Berlin""
+zone.local # returns the current time in time zone "Europe/Berlin"
 ```
 
 ## Contributing

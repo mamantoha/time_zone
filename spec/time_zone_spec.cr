@@ -49,5 +49,17 @@ describe TimeZone do
 
       (zone2 > zone1).should be_truthy
     end
+
+    context "#local" do
+      it "returns current time in time zone" do
+        time = time_zone.local
+        time.should be_a(Time)
+      end
+
+      it "returns time in time zone" do
+        time = time_zone.local(2022, 2, 24)
+        time.should be_a(Time)
+      end
+    end
   end
 end
