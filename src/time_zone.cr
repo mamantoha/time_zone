@@ -230,11 +230,6 @@ class TimeZone
     "(GMT#{formatted_offset}) #{name}"
   end
 
-  # Prints this `TimeZone` to *io*.
-  def inspect(io : IO) : Nil
-    to_s io
-  end
-
   # Returns a formatted string of the offset from UTC.
   #
   # ```
