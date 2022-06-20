@@ -27,7 +27,7 @@ It allows to do the following:
 require "time_zone"
 
 zone = TimeZone.new("Berlin")
-#<TimeZone:0x7f10a7dc5f00 @name="Central Time (US & Canada)", @location=#<Time::Location America/Chicago>, @utc_offset=-18000>
+# => #<TimeZone:0x7ff1262cbf00 @name="Berlin", @location=#<Time::Location Europe/Berlin>, @utc_offset=7200>
 puts zone
 # (GMT+02:00) Berlin
 
