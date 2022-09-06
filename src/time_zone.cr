@@ -70,7 +70,7 @@ class TimeZone
     "Bucharest"                    => "Europe/Bucharest",
     "Cairo"                        => "Africa/Cairo",
     "Helsinki"                     => "Europe/Helsinki",
-    "Kyiv"                         => "Europe/Kiev",
+    "Kyiv"                         => "Europe/Kyiv",
     "Riga"                         => "Europe/Riga",
     "Sofia"                        => "Europe/Sofia",
     "Tallinn"                      => "Europe/Tallinn",
