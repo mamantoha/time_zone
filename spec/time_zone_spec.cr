@@ -37,7 +37,7 @@ describe TimeZone do
     end
 
     it "#inspect" do
-      time_zone.inspect.should match(/#<TimeZone:0x[0-9a-f]+ @name=\"Kyiv\", @location=#<Time::Location Europe\/Kiev>, @utc_offset=\d+>/)
+      time_zone.inspect.should match(/#<TimeZone:0x[0-9a-f]+ @name=\"Kyiv\", @location=#<Time::Location Europe\/Kyiv>, @utc_offset=\d+>/)
     end
 
     it "#formatted_offset" do
