@@ -1,6 +1,10 @@
 require "./spec_helper"
 
 describe TimeZone do
+  it "version" do
+    TimeZone::VERSION.should_not be_nil
+  end
+
   it ".new" do
     time_zone = TimeZone.new("Taipei")
     time_zone.should be_a(TimeZone)

@@ -1,4 +1,6 @@
 class TimeZone
+  VERSION = {{ `shards version #{__DIR__}`.chomp.stringify }}
+
   @@zones = [] of TimeZone
 
   # Keys are TimeZone names, values are TZ database names (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
