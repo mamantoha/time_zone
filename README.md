@@ -26,12 +26,12 @@ It allows to do the following:
 ```crystal
 require "time_zone"
 
-zone = TimeZone.new("Berlin")
-# => #<TimeZone:0x7ff1262cbf00 @name="Berlin", @location=#<Time::Location Europe/Berlin>, @utc_offset=7200>
+zone = TimeZone.new("Taipei")
+zone # => #<TimeZone:0x102b64f00 @name="Taipei", @location=#<Time::Location Asia/Taipei>, @utc_offset=28800>
 puts zone
-# (GMT+02:00) Berlin
+# (GMT+08:00) Taipei
 
-zone.local # returns the current time in time zone "Europe/Berlin"
+zone.local # returns the current time in time zone "Asia/Taipei"
 ```
 
 ## Contributing
