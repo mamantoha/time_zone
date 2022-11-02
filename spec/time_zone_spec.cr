@@ -2,7 +2,7 @@ require "./spec_helper"
 
 describe TimeZone do
   it ".new" do
-    time_zone = TimeZone.new("Kyiv")
+    time_zone = TimeZone.new("Taipei")
     time_zone.should be_a(TimeZone)
   end
 
@@ -13,15 +13,15 @@ describe TimeZone do
   end
 
   it ".find_location" do
-    time_zone = TimeZone.find_location("Kyiv")
+    time_zone = TimeZone.find_location("Taipei")
     time_zone.should be_a(Time::Location)
   end
 
   describe "instance methods" do
-    time_zone = TimeZone.new("Kyiv")
+    time_zone = TimeZone.new("Taipei")
 
     it "#name" do
-      time_zone.name.should eq("Kyiv")
+      time_zone.name.should eq("Taipei")
     end
 
     it "#location" do
@@ -29,15 +29,15 @@ describe TimeZone do
     end
 
     it "#offset" do
-      time_zone.utc_offset.should eq(10800)
+      time_zone.utc_offset.should eq(28800)
     end
 
     it "#to_s" do
-      time_zone.to_s.should eq("(GMT+03:00) Kyiv")
+      time_zone.to_s.should eq("(GMT+08:00) Taipei")
     end
 
     it "#inspect" do
-      time_zone.inspect.should match(/#<TimeZone:0x[0-9a-f]+ @name=\"Kyiv\", @location=#<Time::Location Europe\/Kyiv>, @utc_offset=\d+>/)
+      time_zone.inspect.should match(/#<TimeZone:0x[0-9a-f]+ @name=\"Taipei\", @location=#<Time::Location Asia\/Taipei>, @utc_offset=\d+>/)
     end
 
     it "#formatted_offset" do
@@ -49,7 +49,7 @@ describe TimeZone do
 
     it "comparable" do
       zone1 = TimeZone.new("Central Time (US & Canada)")
-      zone2 = TimeZone.new("Kyiv")
+      zone2 = TimeZone.new("Taipei")
 
       (zone2 > zone1).should be_truthy
     end
