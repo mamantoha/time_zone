@@ -226,8 +226,8 @@ class TimeZone
   end
 
   # Returns a textual representation of this `TimeZone`.
-  def to_s
-    "(GMT#{formatted_offset}) #{name}"
+  def to_s(io : IO)
+    io << "(GMT#{formatted_offset}) #{name}"
   end
 
   # Returns a formatted string of the offset from UTC.
