@@ -45,10 +45,10 @@ describe TimeZone do
     end
 
     it "#formatted_offset" do
-      zone = TimeZone.new("Central Time (US & Canada)")
+      zone = TimeZone.new("Taipei")
 
-      zone.formatted_offset.should eq("-05:00")
-      zone.formatted_offset(false).should eq("-0500")
+      zone.formatted_offset.should eq("+08:00")
+      zone.formatted_offset(false).should eq("+0800")
     end
 
     it "comparable" do
