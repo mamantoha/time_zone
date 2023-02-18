@@ -4,6 +4,7 @@ class TimeZone
   @@zones = [] of TimeZone
 
   # Keys are TimeZone names, values are TZ database names (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+  # https://github.com/rails/rails/blob/main/activesupport/lib/active_support/values/time_zone.rb
   MAPPING = {
     "International Date Line West" => "Etc/GMT+12",
     "Midway Island"                => "Pacific/Midway",
@@ -72,7 +73,7 @@ class TimeZone
     "Bucharest"                    => "Europe/Bucharest",
     "Cairo"                        => "Africa/Cairo",
     "Helsinki"                     => "Europe/Helsinki",
-    "Kyiv"                         => "Europe/Kyiv",
+    "Kyiv"                         => "Europe/Kiev",
     "Riga"                         => "Europe/Riga",
     "Sofia"                        => "Europe/Sofia",
     "Tallinn"                      => "Europe/Tallinn",
@@ -135,7 +136,7 @@ class TimeZone
     "Yakutsk"                      => "Asia/Yakutsk",
     "Darwin"                       => "Australia/Darwin",
     "Adelaide"                     => "Australia/Adelaide",
-    "Canberra"                     => "Australia/Melbourne",
+    "Canberra"                     => "Australia/Canberra",
     "Melbourne"                    => "Australia/Melbourne",
     "Sydney"                       => "Australia/Sydney",
     "Brisbane"                     => "Australia/Brisbane",
