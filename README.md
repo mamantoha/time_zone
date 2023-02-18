@@ -36,6 +36,19 @@ puts zone
 zone.local # returns the current time in time zone "Asia/Taipei"
 ```
 
+### Converting times between timezones
+
+```crystal
+zone_ua = TimeZone.new("Kyiv")
+zone_ar = TimeZone.new("Buenos Aires")
+time_ua = zone_ua.local(2022, 2, 24, 5, 30, 0)
+time_ar = time_ua.in(zone_ar.location)
+time_ua
+# => 2022-02-24 05:30:00.0 +02:00 Europe/Kiev
+time_ar
+# => 2022-02-24 00:30:00.0 -03:00 America/Argentina/Buenos_Aires
+```
+
 ## Contributing
 
 1. Fork it (<https://github.com/mamantoha/time_zone/fork>)
