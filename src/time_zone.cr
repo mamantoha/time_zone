@@ -175,7 +175,7 @@ class TimeZone
 
   private def self.zones_map
     MAPPING.each_with_object({} of String => TimeZone) do |(name, identifier), zones|
-      timezone = self.new(name)
+      timezone = new(name)
       zones[name] = timezone
     end
   end
